@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myInstagram</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="load()">
+    <script src="script.js"></script>
+
+    <div class="header-container">
+
+        <div >
+            <a class="fontinstagram" href="index.html">Instagram</a>
+        </div>
+
+        <div class="search hide-mobile hide-mobileforbigscreen">
+            <input onkeyup="filterPosts()" class="search-header" type="text" id="searchforfilter" name="searchforfilter"
+                placeholder="Suchen">
+        </div>
+
+        <div>
+            <img class="icons-right" src="img/home.png">
+            <img class="icons-right" src="img/send.png">
+            <img class="icons-right" src="img/add_box.png">
+            <img class="icons-right hide-mobile" src="img/explore.png">
+            <img class="icons-right hide-mobile" src="img/favorite.png">
+            <img class="profile-pic" src="img/newyork.jpg">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-left">
+            <div class="story-container">
+                <div id="story" class="content-left">
+
+                </div>
+            </div>
+
+            <div id="post" class="postfirst">
+
+            </div>
+        </div>
+
+        <div class="container-right hide-mobile hide-mobileforbigscreen">
+
+            <div class="content-right">
+                <div class="content-right-first">
+                    <div class="profileandname">
+                        <img class="profile-right" src="img/newyork.jpg">
+                        <p class="username">anil_o9</p>
+                    </div>
+
+                    <div class="wechseln">
+                        <span>Wechseln</span>
+                    </div>
+                </div>
+
+                <div id="suggestion" class="container-suggestion">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
